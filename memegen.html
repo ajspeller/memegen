@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+		<title>MeMe Generator!</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/memegen.css">
+
+	</head>
+
+	<body>
+
+	<!--
+		<div class='navbar-brand'>
+			<img length='45' width='45' src='/images/Shield-E-180x180.png'><span>Meme Generator</span>
+		</div>
+	-->
+
+		<div class="navbar navbar-default navbar-static-top">
+
+			<div class="container">
+
+				<a href="/" class='navbar-brand'>Meme Generator</a>
+
+				<div class='navbar-header'>
+					<button type="button" 
+					        class='navbar-toggle' 
+									data-toggle='collapse'
+									data-target='.navbar-collapse'>
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right collapse navbar-collapse">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Holder 1</a></li>
+					<li><a href="#" data-toggle="dropdown">Holder 2<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Sub Holder 1</a></li>
+						<li class='divider'></li>
+						<li><a href="#">Sub Holder 2</a></li>
+						<li><a href="#">Sub Holder 3</a></li>
+					</ul>
+
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+
+
+
+			<div class="container text-center">
+
+			<div id="memegen">
+
+
+
+				<div class='row well well-lg'>
+					<div class='col-md-12'>
+					<form id="urlImageForm" action="#">
+							<div class="input-group">
+							<span class="input-group-btn">
+							<button type="submit" id="imgSearchsubmit" class='btn btn-info'>Go!</button>
+							</span>
+							<input class="form-control" type="url" id="imgUrl" name="imgUrl" placeholder="Enter URL to image ...">
+							</div>
+							<br />
+					</form>
+
+			<form action="#imgSearch">
+				<div class="input-group">
+					<span class="input-group-btn">
+	  				<button type="submit" id="submit" class='btn btn-primary'>Go!</button>
+	  			</span>
+	  			<input class="form-control" type="search" id="imgSearch" name="imgSearch" placeholder="Search ...">
+  			</div>
+	  	</form>
+
+	  	<form action"#">
+	  		<br />
+	  		<div class="input-group">
+					<span class="input-group-btn">
+	  				<button class='btn btn-primary'>Browse</button>
+	  			</span>
+	  			<input class="form-control" type="file" id="getFile">
+	  		</div>
+	  	
+	  	</form>
+	  	</div>
+	  	</div>
+			
+			<div class="row">
+				
+					<div id="pix"> </div>
+
+			</div>
+
+				<div class='row well well-lg'>
+				<div class='col-md-12'>
+				<form id="controls" action='#'>
+					<label>Font Size: <input type="range" id="fontSize" min="5" max="75" value="36"></label>
+					<br />
+					<label>Text Border: <input id="borderColor" type="color" value='000000'></label>
+					<br />
+					<input type="text" id="topLine" placeholder="Top Line"> 
+					<input type="color" id="topColor" value="#ffffff">
+					<label>Alignment: <input id="topAlign" type="range" min="50" max="480" value="150"> </label>
+					<br />
+					<input type="text" id="bottomLine" placeholder="Bottom Line">
+					<input type="color" id="topColor" value="#ffffff">
+					<label>Alignment: <input id="bottomAlign" type="range" min="5" max="470" value="400"></label>
+					<br />
+					<button type="button" id="saveFile" class='btn btn-warning'>Save MeMe!</button>
+				</form>
+				</div>
+				</div>
+
+			</div>
+
+			<div class='row'>
+			<div class='col-md-12'>
+				<canvas id="canvas" width="600" height="480"> </canvas>
+			</div>
+			</div>
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script src="js/memegen.js" type="text/javascript" charset="utf-8" async defer></script>
+
+	</body>
+</html>
